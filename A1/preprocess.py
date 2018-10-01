@@ -5,8 +5,9 @@ import joblib
 import nltk
 from nltk.corpus import stopwords
 
+#newsgroup path here
 directory_path = '/home/corvo/Downloads/IR/Assignment1/20_newsgroups/20_newsgroups/'
-
+#function to return stemmed string of the given file, along with the words
 def readFile(file_path, count):
     file = open(file_path, encoding='latin')
     content = file.readlines()
